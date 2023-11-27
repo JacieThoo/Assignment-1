@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background-image: url('images/wayv-cover-page.jpeg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 50vh;
+  overflow: hidden;
+}
+
+#header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 12px;
+}
+  
+#menu-button div {
+  width: 45px;
+  height: 5px;
+  background-color: black;
+  margin: 5px 0;
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
+
+#wayv-logo {
+  margin: 0 auto;
+  max-height: 100px;
+  height: auto;
+}
