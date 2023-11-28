@@ -5,32 +5,29 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div id="main-container">
-        <header id="header">
-            
-            <div id="menu-button" onclick="toggleMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="menu-button">
+                <img src="images/menu-icon.png">
+            </a>
+        </nav>
 
-            <img src="images/wayv_logo.png" id="wayv-logo">
-            <div id="socials">
-                <a class="social-icon"><img src="images/spotify-logo.png"></a>
-                <a class="social-icon"><img src="images/instagram-logo.png"></a>
-                <a class="social-icon"><img src="images/twitter-logo.png"></a>
-            </div>
-            
-        </header>
-
-        <div id="background-image">
-            <img src="images/wayv-cover-page.jpeg">
+        <div class="wayv-logo">
+        <a href="#"><img src="images/wayv-logo.png"></a>
         </div>
 
-        <div id="music-video">
-            <iframe width="1120" height="630" src="https://www.youtube.com/embed/1rF5m_j-mLQ?si=3OQKKKM8tjJCliIT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
+        <nav class="navbar">
+            <a class="social-icon"><img src="images/spotify-logo.png"></a>
+            <a class="social-icon"><img src="images/instagram-logo.png"></a>
+            <a class="social-icon"><img src="images/twitter-logo.png"></a>
+            <a class="social-icon"><img src="images/youtube-logo.png"></a>
+        </nav>
+    </header>
 
+    <div class="background-image"></div>
+
+    <div class="music-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1rF5m_j-mLQ?si=kjqM3adO0Rmka7pT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
 </body>
