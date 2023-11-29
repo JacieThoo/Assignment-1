@@ -132,11 +132,29 @@ body {
   z-index: -1; 
 }
 
-.promotion {
+.news {
+  margin-top: 100px;
   height: 100vh;
   padding: 20px;
   background-color: #ffffff;
 }
+
+.news-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-detail {
+  display: flex;
+  margin-top: 20px;
+}
+
+.news-detail a {
+  text-decoration: none;
+  color: black;
+}
+
 
 .title{
   font-size: 100px;
