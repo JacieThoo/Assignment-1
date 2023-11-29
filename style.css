@@ -8,6 +8,7 @@ body {
   min-height: 100vh;
   background-size: cover;
   background-position: center;
+  background-color: #fbfbfb;
 }
 
 .main-video {
@@ -136,7 +137,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  background-color: #001612;
+}
+
+.promotion img {
+  border-radius: 12px;
 }
 
 .promotion h2 {
@@ -145,26 +149,15 @@ body {
   font-size: 60px;
 }
 
-.promotion p {
-  color: white;
-  align-items: center;
-}
-
 .stream {
   text-align: center;
-  background-color: #001612;
   padding: 20px;
 }
 
 .stream a {
-  display: inline-block;
-  padding: 10px 20px;
   font-size: 30px;
-  background-color: white;
   color: black;
-  text-decoration: none;
-  border-radius: 5px;
-  padding: 20px;
+  list-style: none;
 }
 
 .news {
