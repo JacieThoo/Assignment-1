@@ -150,6 +150,23 @@ body {
   align-items: center;
 }
 
+.stream {
+  text-align: center;
+  background-color: #001612;
+  padding: 20px;
+}
+
+.stream a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 20px;
+}
+
 .news {
   margin-top: 100px;
   height: 100vh;
