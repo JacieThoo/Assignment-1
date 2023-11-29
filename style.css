@@ -10,13 +10,87 @@ body {
   background-position: center;
 }
 
+.main-video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.main-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-page-wayv-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px; 
+  z-index: 2; 
+}
+
+.main-page-wayv-logo img {
+  max-height: 90px;
+  width: auto;
+}
+
+.main-page-menu-icon {
+  position: fixed;
+  top: 20px;
+  z-index: 2;
+  right: 20px;
+}
+
+.main-page-menu-icon img {
+  max-height: 70px;
+  width: auto;
+}
+
+.sns {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3;
+}
+
+.sns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sns li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.sns a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+}
+
+.menu-icon-ic {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 3; 
+}
+
+.menu-icon img {
+  max-width: 50px;
+  height: auto;
+}
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 70px;
-  background-color: rgba(1, 115, 113, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,14 +114,13 @@ body {
 .wayv-logo {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .wayv-logo img {
   max-height: 90px;
   width: auto;
 }
-
-
 
 .background-image {
   width: 100%;
@@ -59,20 +132,23 @@ body {
   z-index: -1; 
 }
 
-.music-video {
-  position: relative;
-  overflow: hidden;
-  width: 100vw;
+.promotion {
   height: 100vh;
+  padding: 20px;
+  background-color: #232c2c;
 }
 
-.music-video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.title{
+  font-size: 100px;
+  color: white;
 }
+
+.music-video {
+  padding: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
 
 .about-container {
   display: flex;
