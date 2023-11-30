@@ -297,5 +297,50 @@ body {
   flex-wrap: wrap;
 }
 
+/*Tour*/
+table th, table td{
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  text-align: left;
+}
 
+tbody tr:nth-child(even) {
+  background: #f5f5f5;
+}
 
+tbody tr:nth-child(odd) {
+  background: #e7e7e7;
+}
+
+.tour-dates {
+  width: 80%;
+  border-collapse: collapse;
+  margin: auto; 
+}
+
+.tour-dates a.tickets {
+  display: inline-block;
+  padding: 10px 20px; 
+  width: 112px;
+  background-color: #dcdcdc;
+  color: black;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.tour-heading h1{
+  font-size: 60px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+  margin-top: 80px;
+  margin-bottom: 10px;
+}
+
+.tour-heading h3 {
+  font-size: 30px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
