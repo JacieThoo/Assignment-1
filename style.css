@@ -216,11 +216,11 @@ body {
   margin-top: 10px;
 }
 
-.split {
-  flex-basis: 100%; 
+.about-split {
+  flex-basis: 50%; 
 }
 
-.split img {
+.about-split img {
   max-width: 100%; 
   height: auto;
   margin-top: 20px; 
