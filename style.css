@@ -189,9 +189,9 @@ body {
   width: 100%;
 }
 
-/*About*/
-.heading {
-  position: fixed;
+/*Heading (nav bar)*/
+.header {
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -200,9 +200,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
 }
 
+/*About*/
 .about-container {
   display: flex;
   flex-direction: wrap;
@@ -242,16 +242,12 @@ body {
   padding: 20px;
 }
 
-.row-1 {
-  display: flex;
-}
-
+.row-1,
 .row-2 {
   display: flex;
 }
 
 .members-split {
-  flex: 1
   padding: 5px;
 }
 
@@ -270,17 +266,15 @@ body {
 }
 
 /*Discography*/
-.units-container {
+.discography-heading h1 {
+  font-size: 60px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  width: 50%;
-  padding: 20px;
+  justify-content: flex-start;
+  margin-left: 20px;
 }
 
 .album-split {
-  flex: 1
-  padding: 5px;
+  text-align: center;
 }
 
 .album-split img {
@@ -303,10 +297,5 @@ body {
   flex-wrap: wrap;
 }
 
-.discography-heading h1 {
-  font-size: 60px;
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 20px;
-  margin-top: 400px;
-}
+
+
