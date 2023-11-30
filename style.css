@@ -289,26 +289,24 @@ body {
   padding: 20px;
 }
 
-.alb-row-1 {
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-}
-
-.alb-row-2 {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
+.alb-row-1,
 .alb-row-3 {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
 }
 
+.alb-row-2,
 .alb-row-4 {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+}
+
+.discography-heading h1 {
+  font-size: 60px;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+  margin-top: 400px;
 }
