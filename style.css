@@ -177,6 +177,48 @@ body {
   font-size: 100px;
 }
 
+@media only screen and (max-width: 600px) {
+  .main-page-wayv-logo {
+    text-align: center; 
+  }
+
+  .main-page-wayv-logo img {
+    display: block;
+    margin: 0 auto; 
+    max-width: 100%;
+    height: auto;
+  }
+
+.sns {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sns ul {
+  padding: 0;
+}
+
+.sns li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.main-page-menu-icon img {
+  max-width: 30px;
+  height: auto;
+}
+
+.main-video video {
+  width: 100%;
+}
+
+.promotion .split,
+.promotion .split iframe {
+   width: 100%;
+}
+}
+
+
 /*for split*/
 .split {
   padding: 2%;
@@ -343,4 +385,38 @@ tbody tr:nth-child(odd) {
   font-size: 30px;
   margin-left: 50px;
   margin-bottom: 30px;
+}
+
+/*footer*/
+footer {
+  background-color: #1a1a1a;
+  color: #fff; 
+  padding: 20px 0; 
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-links a {
+  color: #fff; 
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.sns-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.sns-links a:hover {
+  opacity: 0.8;
 }
