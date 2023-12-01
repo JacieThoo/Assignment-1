@@ -115,14 +115,27 @@ body {
 }
 
 .stream {
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
 }
 
-.stream a {
-  font-size: 30px;
-  color: black;
-  list-style: none;
+.stream-button, 
+.shop-button {
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #9a9a9a;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.stream-button:hover,
+.shop-button:hover {
+  background-color: #757575;
 }
 
 .news {
@@ -155,6 +168,7 @@ body {
 .shop {
   padding: 20px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .physical-album img {
@@ -162,60 +176,90 @@ body {
   margin-right: 20px;
 }
 
-@media only screen and (max-width: 600px) {
-  .main-video {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: 0;
-  }
-  
-  .main-video video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
+.visit-shop {
+  display: flex;
+  margin-left: 20px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 768px) {
   .main-page-wayv-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    top: 10px;
+    left: 10px;
   }
 
   .main-page-wayv-logo img {
-    display: block;
-    margin: 0 auto; 
-    max-width: 130px;
-    height: auto;
+    max-height: 50px;
   }
 
-  .sns {
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .sns ul {
-    padding: 0;
-  }
-
-  .sns li {
-    display: block;
-    margin-bottom: 10px;
+  .main-page-menu-icon {
+    top: 10px;
+    right: 10px;
   }
 
   .main-page-menu-icon img {
-    max-width: 30px;
-    height: auto;
+    max-height: 50px;
   }
 
-  .main-video video {
-    width: 100%;
+  .sns {
+    bottom: 10px;
+    right: 10px;
   }
 
-  .promotion .split,
-  .promotion .split iframe {
+  .sns a{
+    font-size: 16px;
+  }
+
+  .sns li {
+    margin-right: 5px;
+    font-size: 16px;
+  }
+
+  .wayv-logo img {
+    max-height: 60px;
+  }
+
+  .background-image {
+    height: 80vh;
+  }
+
+  .promotion h2 {
+    font-size: 40px;
+  }
+
+  .stream,
+  .visit-shop {
+    margin-left: 10px;
+  }
+
+  .news {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .news-detail {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 60px;
+    margin-left: 10px;
+  }
+
+  .shop {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .physical-album {
     width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .physical-album img {
+    width: 100%;
+    max-width: 450px; /* Adjust the maximum width as needed */
+    margin-right: 0;
   }
 }
 
@@ -239,7 +283,7 @@ body {
   left: 0;
   width: 100%;
   height: 100px;
-  background-color: rgba(31, 31, 31, 0.277);
+  background-color: rgba(193, 193, 193);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -253,19 +297,24 @@ body {
   margin-top: 70px; 
 }
 
+.about-image {
+  max-height: 675px;
+  margin-top: 10px;
+}
+
 .about-container h1 {
   font-size: 60px;
   margin-top: 10px;
 }
 
-.about-split {
-  flex-basis: 50%; 
+.about-container p {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-right: 30px;
 }
 
-.about-split img {
-  max-width: 100%; 
-  height: auto;
-  margin-top: 20px; 
+.about-split {
+  flex-basis: 50%; 
 }
 
 .member-heading h1 {
@@ -296,7 +345,6 @@ body {
 .members-split img {
   max-width: 350px; 
   height: auto;
-  margin-top: 20px; 
   margin-right: 20px;
 }
 
@@ -307,11 +355,14 @@ body {
   margin-left: 20px;
 }
 
+.units-container {
+  margin-bottom: 40px;
+}
+
 /*Discography*/
-.discography-heading h1 {
+.album-container h1 {
   font-size: 60px;
-  display: flex;
-  justify-content: flex-start;
+  margin-top: 100px;
   margin-left: 20px;
 }
 
@@ -337,6 +388,54 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+}
+
+.album-container {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-page-wayv-logo img {
+    max-height: 60px;
+  }
+
+  .main-page-menu-icon img {
+    max-height: 50px;
+  }
+
+  .album-container h1 {
+    font-size: 24px;
+  }
+
+  .album-split {
+    margin-bottom: 20px;
+  }
+
+  .album-split img {
+    width: 100%;
+    max-width: none; 
+  }
+
+  .album-split p {
+    font-size: 14px;
+  }
+
+  .alb-row-2 .album-split:last-child img,
+  .alb-row-3 .album-split:first-child img,
+  .alb-row-4 .album-split:last-child img {
+    display: none;
+  }
+
+  .footer-links a,
+  .sns-links a {
+    font-size: 14px;
+  }
 }
 
 /*Tour*/
@@ -392,6 +491,7 @@ tbody tr:nth-child(odd) {
   position: relative;
   margin-bottom: 70px;
   margin-left: 20px;
+  display: flex;
 }
 
 .tour-image {
@@ -427,6 +527,56 @@ tbody tr:nth-child(odd) {
   width: 100%;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-page-wayv-logo img {
+    max-height: 60px;
+  }
+
+  .main-page-menu-icon img {
+    max-height: 50px;
+  }
+
+  .tour-heading h1 {
+    font-size: 24px;
+  }
+
+  .tour-heading h3 {
+    font-size: 18px;
+  }
+
+  .tour-dates th,
+  .tour-dates td {
+    font-size: 14px;
+  }
+
+  .tour-dates a.tickets,
+  .highlights .tour-image .text {
+    font-size: 14px;
+  }
+
+  .highlights .tour-image img {
+    max-width: 100%; 
+    height: auto;
+  }
+
+  .highlights .prev,
+  .highlights .next {
+    font-size: 24px;
+  }
+
+  .footer-links a,
+  .sns-links a {
+    font-size: 14px;
+  }
+}
+
 
 /*footer*/
 footer {
