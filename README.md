@@ -16,7 +16,7 @@ This website is for fans andd potential fans of the band to use to keep up with 
 - As a music enthusiast, I want to know more about WayV's discography
 - As an Singaporean fan, I want the site to be in english
 
-##Features
+## Features
 
 ### Existing Features
 - Menu sidebar on all pages - allows all visitors of the site to navigate through the site seamlessly
