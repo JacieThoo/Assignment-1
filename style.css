@@ -498,6 +498,10 @@ tbody tr:nth-child(odd) {
   display: none;
 }
 
+.tour-image img {
+  width: 100%;
+}
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
